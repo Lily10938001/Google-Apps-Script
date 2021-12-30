@@ -2,6 +2,10 @@
 用以將google sheet的內容定期更新到依時間命名的新sheet內
 
 
+
+語法 :
+
+
 function myFunction() {
   　// 1. 指定URL開啟試算表(請輸入Google Spreadsheet文件的實際URL--複製到"#"前)
     var url = "https://docs.google.com/spreadsheets/d/1fPMuSFJI_2sgILG-w2T51teYbC5oHa3tzEjKWV9I0Ds/edit";   
