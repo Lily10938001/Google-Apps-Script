@@ -7,6 +7,8 @@
 
 
 function myFunction() {
+
+
   　// 1. 指定URL開啟試算表(請輸入Google Spreadsheet文件的實際URL--複製到"#"前)
     var url = "https://docs.google.com/spreadsheets/d/1fPMuSFJI_2sgILG-w2T51teYbC5oHa3tzEjKWV9I0Ds/edit";   
     var spredSheet = SpreadsheetApp.openByUrl(url);
@@ -38,7 +40,7 @@ function myFunction() {
     baseSheet.getRange(2,1).setValue("");
     baseSheet.getRange(2,1).setFormula("IMPORTfeed(\"https://rss.applemarketingtools.com/api/v2/us/music/most-played/10/albums.rss\",\"items\",true,100)");  //反斜線為跳字元
     
-    // 5. 複製取得值至目標工作表
+    // 6. 複製取得值至目標工作表
     // 指定複製範圍
     var rangeToCopy = baseSheet.getRange('A3:D102');
     
