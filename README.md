@@ -40,18 +40,6 @@ function myFunction() {
     baseSheet.getRange(2,1).setValue("");
     baseSheet.getRange(2,1).setFormula("IMPORTfeed(\"https://rss.applemarketingtools.com/api/v2/us/music/most-played/10/albums.rss\",\"items\",true,100)");  //反斜線為跳字元
     
-    // 6. 複製取得值至目標工作表
-    // 指定複製範圍
-    var rangeToCopy = baseSheet.getRange('A3:D102');
-    
-   //指定複製目的地的起始儲存格
-    var targetToCopy = targetSheet.getRange('A2:D101');
-    rangeToCopy.copyTo(targetToCopy);
-    targetSheet.getRange(1,1).setValue("Title");
-    targetSheet.getRange(1,2).setValue("Url");
-    targetSheet.getRange(1,3).setValue("Date Created");
-    targetSheet.getRange(1,4).setValue("Summary");
-    rangeToCopy.copyTo(targetToCopy);
 }
 
 function createSheet(spredSheet, sheetName, index) {
